@@ -1,4 +1,5 @@
 touch containerFiles/default.sqlite
+docker pull harbor.vantage6.ai/infrastructure/server
 
 docker run -d \
     --name vantage6_server \

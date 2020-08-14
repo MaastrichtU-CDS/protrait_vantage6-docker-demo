@@ -1,6 +1,7 @@
 datavolume_name="datavol-mumc"
 
 docker volume create $datavolume_name
+docker pull harbor.distributedlearning.ai/infrastructure/node
 
 docker run -d \
     --name "vantage6-mumc-user" \

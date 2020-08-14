@@ -13,7 +13,7 @@ cd ../integration_test
 python3 -m venv ./env
 env/bin/pip install -r requirements.txt
 clear
-env/bin/python test.py
+env/bin/python test.py -v
 
 # stop server
 cd ../server && sh teardown.sh
