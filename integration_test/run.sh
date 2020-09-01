@@ -12,8 +12,9 @@ cd ../integration_test
 
 python3 -m venv ./env
 env/bin/pip install -r requirements.txt
-clear
 env/bin/python test.py -v
+
+exitCode=$?
 
 # stop server
 cd ../server && sh teardown.sh
@@ -23,3 +24,6 @@ cd ../maastro && sh stop.sh
 
 # stop MUMC node
 cd ../mumc && sh stop.sh
+
+cat testResult.txt
+exit $exitCode
