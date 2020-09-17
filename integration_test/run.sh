@@ -25,5 +25,8 @@ cd ../maastro && sh stop.sh
 # stop MUMC node
 cd ../mumc && sh stop.sh
 
+# back to integration test
+cd ../integration_test
+
 cat testResult.txt
 exit $exitCode
